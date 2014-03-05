@@ -13,4 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require web_rtc
+
+// for more details see: http://emberjs.com/guides/application/
+WebRTC = Ember.Application.create();
+
 //= require_tree .
