@@ -17,6 +17,7 @@
 //= require handlebars
 //= require ember
 //= require ember-data
+//= require bootstrap-datetimepicker
 //= require_self
 //= require web_rtc
 //= require add

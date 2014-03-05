@@ -41,6 +41,7 @@ GEM
       ember-source
       execjs
       handlebars-source
+    bootstrap-datetimepicker-rails (0.0.11)
     bootstrap-sass (3.0.1.0)
       sass (~> 3.2)
     builder (3.1.4)
@@ -142,6 +143,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-datetimepicker-rails
   bootstrap-sass (~> 3.0.1.0.rc)
   ember-rails
   ember-source (= 1.1.2)
