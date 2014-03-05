@@ -1,0 +1,17 @@
+
+<form {{action 'save' on="submit"}}>
+    {{view  Ember.TextField valueBinding="performerName" placeholder="Enter performer name" required="true" }}
+    <br /><br />
+    {{view  Ember.TextField valueBinding="performerCountry" placeholder="Performer country" required="true" }}
+    <br /><br />
+    {{view  Ember.TextField valueBinding="duration" placeholder="Duration" required="true" }}
+    <br /><br />
+    {{view  Ember.TextField valueBinding="time" placeholder="Time" required="true" }}
+    <br /><br />
+    {{view  Ember.TextField valueBinding="customerName" placeholder="Enter customer name" required="true" }}
+    <br /><br />
+    {{view  Ember.TextField valueBinding="description" placeholder="Description" required="true" }}
+    <br /><br />
+    <button class="btn btn-success" type="submit">Save</button>
+    <button class="btn" {{action cancel}}>Cancel</button>
+</form>

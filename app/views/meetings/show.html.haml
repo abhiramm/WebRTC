@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Performer name:
+  = @meeting.performer_name
+%p
+  %b Performer country:
+  = @meeting.performer_country
+%p
+  %b Duration:
+  = @meeting.duration
+%p
+  %b Time:
+  = @meeting.time
+%p
+  %b Customer name:
+  = @meeting.customer_name
+%p
+  %b Description:
+  = @meeting.description
+
+= link_to 'Edit', edit_meeting_path(@meeting)
+\|
+= link_to 'Back', meetings_path

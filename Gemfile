@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', :git => 'git@github.com:indirect/jquery-rails.git'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -35,6 +35,7 @@ end
 gem 'haml-rails'
 gem 'ember-rails'
 gem 'ember-source', '1.1.2'
+gem 'bootstrap-sass', '~> 3.0.1.0.rc'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
