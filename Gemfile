@@ -47,3 +47,4 @@ gem 'ember-source', '1.1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'twilio-ruby'
