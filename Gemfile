@@ -48,3 +48,4 @@ gem 'bootstrap-sass', '~> 3.0.1.0.rc'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'twilio-ruby'
