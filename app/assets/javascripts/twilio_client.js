@@ -32,6 +32,12 @@ function twilio_client_call() {
 	// get the phone number or client to connect the call to
 	params = {"PhoneNumber": $("#number").val()};
 	Twilio.Device.connect(params);
+	var count_down_time = $('#count_down_time').val();
+	console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%555")
+	console.log(count_down_time)
+	$('#countdown').timeTo(parseInt(count_down_time), function(){ 
+		twilio_client_hangup();
+	});
 }
 function twilio_client_hangup() {
 	Twilio.Device.disconnectAll();
