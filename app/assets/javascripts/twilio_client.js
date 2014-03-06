@@ -1,8 +1,7 @@
 $(document).ready(function(){
   
   	if ($("#twilio_client_token").length > 0)
-    {
-
+  {
 	var twilio_token = $("#twilio_client_token").data("token-id") 
   var twilio_client_name = $("#twilio_client_name").data("client-name") 
 	console.log("%%%%%%%%%%%%%%%%%%%%%%%%5")
@@ -39,11 +38,15 @@ function twilio_client_call() {
 	var count_down_time = $('#count_down_time').val();
 	console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%555")
 	console.log(count_down_time)
-	$('#countdown').timeTo(parseInt(count_down_time), function(){ 
+	$('#countdown').timeTo({
+		seconds: 100,
+		countdown: true
+	},function(){ 
 		twilio_client_hangup();
 	});
 }
 function twilio_client_hangup() {
 	Twilio.Device.disconnectAll();
+	$("#countdown").timeTo("stop");
 }
 

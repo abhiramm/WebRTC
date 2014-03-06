@@ -1,6 +1,9 @@
 @import "bootstrap";
 @import 'bootstrap-datetimepicker';
-
+body
+{
+	margin-top:65px;
+}
 .navbar-fixed-top
 {
 position: fixed;
