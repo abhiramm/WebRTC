@@ -3,3 +3,4 @@
 WebRTC.MeetingsView = Ember.View.extend({
   templateName: 'meetings'
 });
+

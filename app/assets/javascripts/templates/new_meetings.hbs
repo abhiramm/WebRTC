@@ -14,13 +14,13 @@
 <div class="control-group">
   <label class="control-label" for="email">Session Duration</label>
   <div class="controls">
-   {{view  Ember.TextField valueBinding="duration" class="form-control" placeholder="Duration" required="true" }}
+   {{view  Ember.TextField valueBinding="duration" class="form-control date-picker" value=sDate placeholder="Duration" required="true" }}
   </div>
 </div>
 <div class="control-group">
-  <label class="control-label" for="notes">Time</label>
+  <label class="control-label" for="notes">Date</label>
   <div class="controls">
-    {{view  Ember.TextField valueBinding="time" class="form-control" placeholder="Time" required="true" id="#duration_date" }}
+    {{view  Ember.TextField valueBinding="time" class="form-control" placeholder="Time" required="true" id="#duration_date" value=sDate type='datetime-local' }}
   </div>
 </div>
 
