@@ -3,7 +3,11 @@
 <head>
   <title>WebRTC</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	
+  <%= javascript_include_tag "//static.twilio.com/libs/twiliojs/1.1/twilio.min.js", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+
   <%= csrf_meta_tags %>
 </head>
 <body>
