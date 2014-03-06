@@ -1,16 +1,13 @@
-<nav class="navbar navbar-default">
-    <div class="navbar-header">
-            
-            {{#link-to 'index' class="navbar-brand" }} Home {{/link-to}}
-            <ul class="nav navbar-nav">
-                <li>
-                    {{#link-to 'meetings' }}Sessions list{{/link-to}}
-                </li>
-                <li>
-                    {{#link-to 'new_meetings' }}Create Session{{/link-to}}
-                </li>
-               
-            </ul>
-            
-    </div>
-</nav>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+       <a class="navbar-brand" href="#">WebRTC</a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+      <li>{{#link-to 'meetings' }}Sessions list{{/link-to}}</li>
+      <li>{{#link-to 'new_meetings' }}Create Session{{/link-to}}</li>
+    </ul>
+    </li>
+    </ul>
+  </div>
+</div>

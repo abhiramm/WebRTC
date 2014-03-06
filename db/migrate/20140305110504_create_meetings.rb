@@ -3,7 +3,7 @@ class CreateMeetings < ActiveRecord::Migration
     create_table :meetings do |t|
       t.string :performer_name
       t.string :performer_country
-      t.datetime :duration
+      t.string :duration
       t.datetime :time
       t.string :customer_name
       t.text :description

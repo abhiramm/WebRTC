@@ -3,11 +3,8 @@
 <table class="table table-bordered table-hover table-striped">
   <thead>
     <tr>
-      <th>Performer name</th>
-      <th>Performer country</th>
-      <th>Customer name</th>
+      <th>Session</th>
       <th>Duration</th>
-      <th>Time</th>
       <th>Description</th>
       <th>Actions</th>
     </tr>
@@ -17,11 +14,8 @@
       
       {{#each model}}
       <tr>
-       <td> {{performerName}} </td> 
-       <td> {{performerCountry}} </td> 
-       <td> {{customerName}} </td> 
-        <td> {{duration}} </td> 
-        <td> {{time}} </td> 
+       <td> {{performerName}} - {{customerName}}  </td> 
+       <td> {{duration}} </td> 
         <td> {{description}} </td> 
         
       <td><a href="/home/call">Go to session</a></td>

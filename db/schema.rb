@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20140305110504) do
   create_table "meetings", force: true do |t|
     t.string   "performer_name"
     t.string   "performer_country"
-    t.datetime "duration"
+    t.string   "duration"
     t.datetime "time"
     t.string   "customer_name"
     t.text     "description"

@@ -1,2 +1,17 @@
 @import "bootstrap";
 @import 'bootstrap-datetimepicker';
+
+.navbar-fixed-top
+{
+position: fixed;
+right: 0;
+left: 0;
+z-index: 1030;
+}
+
+.top-intend
+{
+  float: left;
+  margin-top: 70px;
+  width:100%;
+}
