@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:indirect/jquery-rails.git
+  remote: git://github.com/indirect/jquery-rails.git
   revision: c1eb6aeeb213202eadff373067db6f4c3e7581f3
   specs:
     jquery-rails (2.0.2)
