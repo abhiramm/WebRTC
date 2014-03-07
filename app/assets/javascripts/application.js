@@ -12,15 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require jquery
+//= require twilio_client
+//= require jquery.timeTo
 //= require handlebars
 //= require ember
 //= require ember-data
+//= require bootstrap-datetimepicker
 //= require_self
 //= require web_rtc
+//= require add
 
 // for more details see: http://emberjs.com/guides/application/
-WebRTC = Ember.Application.create();
+WebRTC = Ember.Application.create({LOG_TRANSITIONS: true});
 
-//= require_tree .

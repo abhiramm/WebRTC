@@ -1,0 +1,46 @@
+<form {{action 'save' on="submit"}} class="form-horizontal">
+<div class="control-group">
+  <label class="control-label" for="firstName">Performer name</label>
+  <div class="controls">
+     {{view  Ember.TextField valueBinding="performerName" class="form-control" placeholder="Enter performer name" required="true" }}
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="lastName">Performer country</label>
+  <div class="controls">
+   {{view  Ember.TextField valueBinding="performerCountry" class="form-control" placeholder="Performer country" required="true" }}
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="email">Session Duration</label>
+  <div class="controls">
+   {{view  Ember.TextField valueBinding="duration" class="form-control" placeholder="Duration" required="true" }}
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="notes">Time</label>
+  <div class="controls">
+    {{view  Ember.TextField valueBinding="time" class="form-control" placeholder="Time" required="true" }}
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="notes">Customer name</label>
+  <div class="controls">
+   {{view  Ember.TextField valueBinding="customerName" class="form-control" placeholder="Enter customer name" required="true" }}
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="notes">Description</label>
+  <div class="controls">
+    {{view  Ember.TextField valueBinding="description" class="form-control" placeholder="Description" required="true" }}
+  </div>
+</div>
+<br />
+
+ <button class="btn btn-success" type="submit">Save</button>
+<button class="btn btn-danger" {{action cancel}}>Cancel</button>
+</form>
+
+

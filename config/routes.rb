@@ -1,28 +1,28 @@
 WebRTC::Application.routes.draw do
+  resources :meetings
+
   get "home/index"
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  get "home/call"
+	post 'voice' => 'home#voice'
+	# The priority is based upon order of creation: first created -> highest
+	# priority.  See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-   root 'home#index'
+	# You can have the root of your site routed with "root"
+	 root 'home#index'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+	# Example of regular route: get 'products/:id' => 'catalog#view'
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+	# Example of named route that can be invoked with purchase_url(id:
+	 # product.id) get 'products/:id/purchase' => 'catalog#purchase', as:
+	 # :purchase
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+	# Example resource route (maps HTTP verbs to controller actions
+	 # automatically): resources :productsl
 
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
+	# Example resource route with options: resources :products do member do get
+	 # 'short' post 'toggle' end
   #
-  #     collection do
+	#     collection do
   #       get 'sold'
   #     end
   #   end

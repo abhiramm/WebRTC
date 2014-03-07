@@ -2,4 +2,9 @@
 
 WebRTC.Router.map(function() {
   // this.resource('posts');
+     this.resource('meetings', function(){
+        this.route('new');
+        
+    });
+    this.resource('new_meetings');
 });
