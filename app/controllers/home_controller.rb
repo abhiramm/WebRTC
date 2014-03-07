@@ -3,6 +3,10 @@ class HomeController < ApplicationController
 
 	end
 
+	def customer
+
+	end
+
 	def call
 		if params[:customer_name]
 			@customer_name = params[:customer_name]
