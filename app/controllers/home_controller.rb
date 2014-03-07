@@ -7,12 +7,12 @@ class HomeController < ApplicationController
 		if params[:customer_name]
 			@customer_name = params[:customer_name]
 		end
-		#default_client = "demoperformer"
+		default_client = "demoperformer"
 		@client_name = params[:client]
-		#if @client_name.nil?
-		#	Rails.logger.info "Client is nil"
-		#	@client_name = default_client
-		#end
+		if @client_name.nil?
+			Rails.logger.info "Client is nil"
+			@client_name = default_client
+		end
 		Rails.logger.info "@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 		Rails.logger.info @client_name
 		TWILIO_INIT.allow_client_outgoing DEMO_APP_SID_TWILIO
