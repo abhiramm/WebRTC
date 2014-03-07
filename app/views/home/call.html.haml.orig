@@ -1,0 +1,44 @@
+.container
+<<<<<<< HEAD
+  %div#log.alert.alert-info Loading pigeons...
+  %center
+    .row
+      .col-md-12
+        %input.input-lg#number{name: "number", placeholder: "Enter a phone number or client to call", type: "text"}/
+        %br
+        %input.input-lg#count_down_time{name: "count_down_time", placeholder: "Enter the number of seconds the call should last", type: "hidden"}
+        %br
+        %button.call.btn-lg.btn-success{onclick: "twilio_client_call();"}
+          Call
+        %button.call.btn-lg.btn-danger{onclick: "twilio_client_hangup();"}
+          Hangup
+        %br
+        %br
+        #twilio_client_token{"data-token-id" => "#{@token}"} 
+        #twilio_client_name{"data-client-name" => "#{@client_name}"} 
+    #countdown
+    
+  %div.well.pull-left.col-md-4
+    %u
+      %h4 Current Call
+    
+    %h3 #{@meeting.performer_name}
+    %h4 #{@meeting.performer_country}
+    %h5 Duration: #{@meeting.duration}
+    
+    
+      
+      
+=======
+  #call_id
+    %center
+      .row
+        .col-md-12
+          %br
+          %button.call.btn-lg.btn-danger{onclick: "opentok_client_hangup(this.session);"}
+            Hangup
+          %br
+          #myPublisher
+          %br
+          #countdown
+>>>>>>> 7079f42e9498e5c33085fc53d54cdf0d53c2f2dd
