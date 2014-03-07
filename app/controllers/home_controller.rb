@@ -37,4 +37,8 @@ class HomeController < ApplicationController
 		end
 		response.text 
 	end
+
+	def tokbox
+
+	end
 end
