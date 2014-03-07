@@ -25,7 +25,7 @@ $('document').ready(function(){
 				var stream = streams[i];
 				if (stream.connection.connectionId
 						!= session.connection.connectionId) {
-							session.subscribe(stream,"myPublisher");
+							session.subscribe(stream,"myPublisher",{width: 500, height: 400});
 						}
 			}	
 		}
