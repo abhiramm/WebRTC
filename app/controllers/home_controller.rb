@@ -2,6 +2,12 @@ class HomeController < ApplicationController
 	def index
 
 	end
+
+	def customer
+
+	end
+
+
   
   def call
     @meeting = Meeting.find(params[:id])
