@@ -17,7 +17,9 @@
     
     %h3 #{@meeting.performer_name}
     %h4 #{@meeting.performer_country}
-    %h5 Duration: #{@meeting.duration}
+    %h5 Duration: #{@meeting.duration} minutes
+    #session_duration{"data-duration" => "#{@meeting.duration}"}
+    #session_performer_name{"data-performer-name" => "#{@meeting.performer_name}"}
     
       
       
