@@ -1,11 +1,13 @@
 WebRTC.NewMeetingsRoute = Ember.Route.extend({
   model: function () {
-  //  return WebRTC.Meeting.createRecord({performerName: '', performerCountry: '', customerName: '', duration: '', time: '', description: '' });
+    return WebRTC.Meeting.createRecord();
+  //  return this.store.createRecord('post');
   },
   actions: {
     save: function () {
     this.get('store').commit();
     this.transitionTo('meetings');
+    this.transaction = null;
   },
   
   cancel: function() {

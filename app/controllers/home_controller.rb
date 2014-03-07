@@ -7,7 +7,11 @@ class HomeController < ApplicationController
 
 	end
 
-	def call
+
+  
+  def call
+    @meeting = Meeting.find(params[:id])
+    
 		if params[:customer_name]
 			@customer_name = params[:customer_name]
 		end

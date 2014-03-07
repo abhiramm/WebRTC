@@ -15,13 +15,14 @@
   <tbody>
       
       {{#each model}}
+      {{#if id }}
       <tr>
        <td> {{performerName}} - {{customerName}}  </td> 
        <td> {{duration}} </td> 
-        <td> {{description}} </td> 
-        
-      <td><a href="/home/call/?customer_name={{unbound customerName}}">Go to session</a></td>
+       <td> {{description}} </td> 
+       <td> <a href="/home/call/?id={{unbound id}}">Go to session</a></td>
       </tr>
+      {{/if}}
       {{/each}}
     
   
