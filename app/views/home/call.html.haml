@@ -16,3 +16,14 @@
         #twilio_client_token{"data-token-id" => "#{@token}"} 
         #twilio_client_name{"data-client-name" => "#{@client_name}"} 
     #countdown
+    
+  %div.well.pull-left.col-md-4
+    %u
+      %h4 Current Call
+    
+    %h3 #{@meeting.performer_name}
+    %h4 #{@meeting.performer_country}
+    %h5 Duration: #{@meeting.duration}
+    
+      
+      
