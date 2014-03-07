@@ -50,3 +50,4 @@ gem 'bootstrap-sass', '~> 3.0.1.0.rc'
 # gem 'debugger', group: [:development, :test]
 gem 'twilio-ruby'
 gem 'pg'
+gem 'rails_12factor'
