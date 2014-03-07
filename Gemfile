@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: [:development, :test]
+#gem 'sqlite3', group: [:development, :test]
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -19,14 +19,14 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', :git => 'git@github.com:indirect/jquery-rails.git'
+gem 'jquery-rails', :github =>'indirect/jquery-rails'
 gem 'bootstrap-datetimepicker-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
-
+gem 'unicorn'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -49,3 +49,6 @@ gem 'bootstrap-sass', '~> 3.0.1.0.rc'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'twilio-ruby'
+gem 'pg'
+gem 'rails_12factor'
+gem 'opentok'

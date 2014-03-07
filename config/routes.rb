@@ -1,8 +1,10 @@
 WebRTC::Application.routes.draw do
   resources :meetings
-
+	resources :rooms
+	match '/party/:id', :to => "rooms#party", :as => :party, :via => :get
   get "home/index"
   get "home/call"
+	get "home/tokbox"
 	post 'voice' => 'home#voice'
 	# The priority is based upon order of creation: first created -> highest
 	# priority.  See how all your routes lay out with "rake routes".

@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twilio_client
+// require twilio_client
+//= require opentok_client
 //= require jquery.timeTo
 //= require handlebars
 //= require ember
