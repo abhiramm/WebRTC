@@ -12,7 +12,7 @@ $('document').ready(function(){
 		seconds: 100,
 		countdown: true
 	},function(){ 
-		opentok_client_hangup();
+		opentok_client_hangup(session);
 	});	
 	}
 	function subscribeToStreams(streams) {
@@ -28,7 +28,7 @@ $('document').ready(function(){
 		subscribeToStreams(event.streams);
 	}
 
-	var publisher = TB.initPublisher(apiKey);
+	var publisher = TB.initPublisher(apiKey,"myPublisher",{width: 500, height: 400,name: "Test Name"});
 	var session   = TB.initSession(sessionId);
 
 	session.connect(apiKey, token);
@@ -37,7 +37,7 @@ $('document').ready(function(){
 	session.addEventListener("streamCreated",	streamCreatedHandler);
 	}
 	});
-function opentok_client_hangup()
+function opentok_client_hangup(session)
 {
 	session.disconnect();
 	$("#countdown").timeTo("stop");
