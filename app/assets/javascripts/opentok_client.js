@@ -19,9 +19,13 @@ $('document').ready(function(){
 		countdown: true
 	},function(){ 
 		opentok_client_hangup(session);
-	});	
+	});
+	$("#hangup_button").click(function(){
+		opentok_client_hangup(session)	
+	});				
 	}
-	}
+	} 
+	
 	if($("#customer_video").length > 0)
 	{
 		function subscribeToStreams(streams) {	
